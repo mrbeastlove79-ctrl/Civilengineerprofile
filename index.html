@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Civil Engineer | Project Manager</title>
+<meta name="description" content="Professional portfolio of a Civil Engineer and Project Manager with 10+ years of experience.">
+<style>
+:root{--navy:#071b2f;--navy2:#0d2c48;--gold:#f5bd18;--green:#20d366;--text:#132238;--muted:#657386;--light:#f5f8fb;--white:#fff}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--text);background:var(--light);line-height:1.6}
+a{text-decoration:none;color:inherit}
+.nav{position:sticky;top:0;z-index:20;background:rgba(7,27,47,.96);backdrop-filter:blur(12px);color:white}
+.navin{max-width:1150px;margin:auto;padding:15px 22px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:900;font-size:18px;display:flex;gap:10px;align-items:center}.logoMark{color:var(--gold);font-size:30px}
+.logo small{display:block;color:#b9c6d2;font-size:10px;font-weight:500}
+.links{display:flex;gap:25px;font-size:14px}.links a:hover{color:var(--gold)}
+.hero{min-height:650px;color:#fff;background:linear-gradient(90deg,rgba(7,27,47,.98) 0%,rgba(7,27,47,.9) 42%,rgba(7,27,47,.22) 100%),linear-gradient(135deg,#183d5d,#637b88);position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;right:-100px;bottom:-170px;width:58%;height:75%;background:linear-gradient(145deg,transparent 30%,rgba(255,255,255,.08) 31%,rgba(255,255,255,.08) 32%,transparent 33%),repeating-linear-gradient(90deg,transparent 0 75px,rgba(255,255,255,.07) 76px 79px);transform:skewX(-12deg)}
+.heroIn{max-width:1150px;margin:auto;min-height:650px;padding:90px 22px;display:flex;align-items:center;position:relative;z-index:2}
+.heroText{max-width:650px}.eyebrow{color:var(--gold);font-weight:800;letter-spacing:2px;font-size:13px}
+h1{font-size:clamp(43px,8vw,76px);line-height:1.02;margin:15px 0}.accent{color:var(--gold)}
+.lead{font-size:20px;color:#e4edf4;max-width:600px}
+.stats{display:flex;gap:30px;margin:35px 0;flex-wrap:wrap}.stat strong{display:block;font-size:23px}.stat span{font-size:12px;color:#bfcbd6}
+.btns{display:flex;gap:14px;flex-wrap:wrap}.btn{padding:15px 25px;border-radius:14px;font-weight:800;border:1px solid rgba(255,255,255,.55);transition:.2s}.btn:hover{transform:translateY(-2px)}
+.whatsapp{background:var(--green);border-color:var(--green);color:#fff}.outline{color:#fff}
+.phone{margin-top:18px;color:#d7e1e9}
+.section{max-width:1150px;margin:auto;padding:85px 22px}.sectionTitle{margin-bottom:38px}.tag{color:#c38d00;font-weight:900;font-size:12px;letter-spacing:1.5px}.section h2{font-size:36px;line-height:1.15;margin-top:7px}
+.about{display:grid;grid-template-columns:330px 1fr;gap:55px;align-items:center}
+.portrait{border-radius:28px;background:linear-gradient(145deg,#dfe8ef,#a9bdc9);padding:18px;box-shadow:0 20px 45px #14283a22}
+.portrait svg{display:block;width:100%;border-radius:20px}
+.aboutText p{color:var(--muted);font-size:17px;margin:15px 0}.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:25px}.fact{padding:15px;border-radius:14px;background:white;border:1px solid #e4eaf0}.fact b{display:block}.fact span{font-size:12px;color:var(--muted)}
+.skills{background:white}.skillGrid{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.skill{padding:22px;background:#f6f9fc;border-radius:18px;border:1px solid #e7edf2;font-weight:800}.skill i{font-style:normal;font-size:28px;display:block;margin-bottom:9px}
+.experience{display:grid;grid-template-columns:1fr 1fr;gap:60px}.timeline{border-left:3px solid #e7b516;padding-left:25px}.job{position:relative;margin-bottom:30px}.job:before{content:"";position:absolute;left:-34px;top:6px;width:13px;height:13px;background:var(--gold);border:4px solid var(--light);border-radius:50%}.job time{color:#a47600;font-size:12px;font-weight:900}.job h3{font-size:19px}.job p{color:var(--muted);font-size:14px}
+.projects{background:#edf3f7}.projectGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.project{background:#fff;border-radius:20px;overflow:hidden;box-shadow:0 8px 25px #11283b12}.projectImg{height:160px;background:linear-gradient(145deg,#496b80,#102f49);position:relative;overflow:hidden}.building{position:absolute;bottom:0;left:15%;width:70%;height:72%;background:repeating-linear-gradient(90deg,#b7c5cd 0 25px,#718793 26px 31px);clip-path:polygon(8% 0,92% 0,100% 100%,0 100%)}.projectBody{padding:18px}.projectBody h3{font-size:18px}.projectBody p{font-size:13px;color:var(--muted)}
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.service{padding:25px;background:#fff;border-radius:18px;border-top:4px solid var(--gold);box-shadow:0 5px 18px #14283a0c}.service h3{margin:8px 0}.service p{font-size:13px;color:var(--muted)}
+.cta{background:var(--navy);color:#fff;text-align:center;padding:70px 22px}.cta h2{font-size:42px}.cta p{color:#bcc9d5;margin:8px 0 25px}.footer{background:#051321;color:#9dadbb;text-align:center;padding:20px;font-size:12px}
+@media(max-width:800px){.links{display:none}.heroIn{padding:70px 22px}.about,.experience{grid-template-columns:1fr}.about{gap:30px}.skillGrid{grid-template-columns:repeat(2,1fr)}.projectGrid,.services{grid-template-columns:1fr}.facts{grid-template-columns:1fr}.section{padding:65px 18px}}
+@media(max-width:450px){h1{font-size:45px}.lead{font-size:17px}.stats{gap:18px}.skillGrid{grid-template-columns:1fr 1fr}.btn{width:100%;text-align:center}}
+</style>
+</head>
+<body>
+
+<nav class="nav"><div class="navin">
+  <a class="logo" href="#home"><span class="logoMark">🏗</span><span>Civil Engineer<small>& Project Manager</small></span></a>
+  <div class="links"><a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#services">Services</a><a href="#contact">Contact</a></div>
+</div></nav>
+
+<header class="hero" id="home"><div class="heroIn"><div class="heroText">
+  <div class="eyebrow">BUILDING A BETTER TOMORROW</div>
+  <h1>Civil Engineer &<br><span class="accent">Project Manager</span></h1>
+  <p class="lead">Turning ideas into solid structures with quality, safety and timely delivery.</p>
+  <div class="stats"><div class="stat"><strong>10+</strong><span>Years Experience</span></div><div class="stat"><strong>🏗</strong><span>Construction & Infrastructure</span></div><div class="stat"><strong>✓</strong><span>Quality & Safety Focus</span></div></div>
+  <div class="btns"><a class="btn whatsapp" href="https://wa.me/923223722743" target="_blank">💬 Chat on WhatsApp →</a><a class="btn outline" href="tel:+923223722743">📞 Call Now</a></div>
+  <div class="phone">+92 322 3722743</div>
+</div></div></header>
+
+<section class="section" id="about"><div class="about">
+  <div class="portrait">
+    <svg viewBox="0 0 500 560" xmlns="http://www.w3.org/2000/svg" aria-label="Imaginary civil engineer portrait">
+      <defs><linearGradient id="p" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#dce9ef"/><stop offset="1" stop-color="#8298a6"/></linearGradient></defs>
+      <rect width="500" height="560" rx="25" fill="url(#p)"/>
+      <path d="M0 470 Q130 390 250 450 T500 430V560H0Z" fill="#17394f"/>
+      <rect x="58" y="80" width="384" height="280" rx="15" fill="#b8c7cf" opacity=".3"/>
+      <g transform="translate(120 75)">
+        <circle cx="130" cy="110" r="78" fill="#a96d4e"/>
+        <path d="M53 105Q62 20 140 23Q218 25 208 110Q190 73 132 73Q84 75 53 105" fill="#26333a"/>
+        <circle cx="102" cy="114" r="6" fill="#17212a"/><circle cx="158" cy="114" r="6" fill="#17212a"/>
+        <path d="M105 145Q130 162 155 145" fill="none" stroke="#633e31" stroke-width="6" stroke-linecap="round"/>
+        <path d="M40 320Q50 215 130 205Q210 215 220 320Z" fill="#142e40"/>
+        <path d="M83 202L130 270L177 202" fill="#fff"/>
+        <path d="M91 201L130 253L169 201" fill="none" stroke="#d8a91a" stroke-width="7"/>
+        <rect x="90" y="238" width="80" height="82" rx="8" fill="#b5d83b" opacity=".9"/>
+      </g>
+      <text x="250" y="520" text-anchor="middle" font-family="Arial" font-size="18" fill="white">IMAGINARY PROFESSIONAL PORTRAIT</text>
+    </svg>
+  </div>
+  <div class="aboutText"><div class="tag">ABOUT ME</div><h2>Professional Civil Engineer & Project Manager</h2>
+    <p>I am a Civil Engineer and Project Manager with over 10 years of professional experience. My focus is on planning, coordinating and managing construction work with strong attention to quality, safety, cost control and timely completion.</p>
+    <p>This portfolio is a professional demonstration profile. Specific employers, qualifications and project records can be added later with verified information.</p>
+    <div class="facts"><div class="fact"><b>10+ Years</b><span>Professional Experience</span></div><div class="fact"><b>Civil Engineering</b><span>Professional Field</span></div><div class="fact"><b>Project Manager</b><span>Current Role</span></div></div>
+  </div>
+</div></section>
+
+<section class="section skills" id="skills"><div class="sectionTitle"><div class="tag">KEY SKILLS</div><h2>Professional Skills</h2></div>
+<div class="skillGrid">
+  <div class="skill"><i>📋</i>Project Management</div><div class="skill"><i>🏗️</i>Construction Supervision</div><div class="skill"><i>📐</i>Project Planning</div><div class="skill"><i>📊</i>Quantity Estimation</div>
+  <div class="skill"><i>⌁</i>AutoCAD</div><div class="skill"><i>🏢</i>Site Management</div><div class="skill"><i>👥</i>Team Leadership</div><div class="skill"><i>✓</i>Quality & Safety</div>
+  <div class="skill"><i>💰</i>Cost Control</div><div class="skill"><i>📅</i>Scheduling</div><div class="skill"><i>🔧</i>Problem Solving</div><div class="skill"><i>📄</i>Technical Documentation</div>
+</div></section>
+
+<section class="section" id="experience"><div class="sectionTitle"><div class="tag">CAREER</div><h2>Professional Experience</h2></div>
+<div class="experience"><div class="timeline">
+  <div class="job"><time>RECENT</time><h3>Project Manager</h3><p>Project planning, execution monitoring, team coordination, contractor communication, quality assurance and timely delivery.</p></div>
+  <div class="job"><time>PREVIOUS EXPERIENCE</time><h3>Senior / Civil Engineering Roles</h3><p>Construction supervision, site coordination, technical documentation, progress monitoring and quality control.</p></div>
+  <div class="job"><time>EARLIER EXPERIENCE</time><h3>Site Engineering</h3><p>Supported site activities, measurements, inspections, drawings and coordination of construction work.</p></div>
+</div><div>
+  <div class="tag">WORK APPROACH</div><h2>Plan · Build · Manage · Deliver</h2>
+  <p style="color:var(--muted);margin-top:15px">A practical, organized approach to construction management—bringing together people, schedules, resources and quality requirements to keep projects moving.</p>
+</div></div></section>
+
+<section class="section projects" id="projects"><div class="sectionTitle"><div class="tag">PORTFOLIO</div><h2>Featured Project Types</h2></div>
+<div class="projectGrid">
+  <article class="project"><div class="projectImg"><div class="building"></div></div><div class="projectBody"><h3>Residential Buildings</h3><p>Planning, construction coordination and site supervision.</p></div></article>
+  <article class="project"><div class="projectImg"><div class="building"></div></div><div class="projectBody"><h3>Commercial Developments</h3><p>Project management, scheduling and quality monitoring.</p></div></article>
+  <article class="project"><div class="projectImg"><div class="building"></div></div><div class="projectBody"><h3>Infrastructure Works</h3><p>Site coordination, execution monitoring and documentation.</p></div></article>
+</div></section>
+
+<section class="section" id="services"><div class="sectionTitle"><div class="tag">SERVICES</div><h2>What I Offer</h2></div>
+<div class="services"><div class="service"><h3>📋 Project Management</h3><p>Planning, coordination, monitoring and delivery support.</p></div><div class="service"><h3>🏗️ Construction Supervision</h3><p>Site oversight with emphasis on workmanship, safety and progress.</p></div><div class="service"><h3>📊 Estimation & BOQ</h3><p>Quantity take-off and construction cost documentation.</p></div><div class="service"><h3>📅 Planning & Scheduling</h3><p>Organizing activities, resources and project timelines.</p></div><div class="service"><h3>✓ Quality Control</h3><p>Inspection, documentation and quality-focused coordination.</p></div><div class="service"><h3>👷 Site Consultancy</h3><p>Practical support for construction and site-related matters.</p></div></div></section>
+
+<section class="cta" id="contact"><h2>Let’s Work <span class="accent">Together</span></h2><p>For your next project, consultation or professional collaboration, feel free to contact me.</p>
+<a class="btn whatsapp" href="https://wa.me/923223722743" target="_blank">💬 Chat on WhatsApp</a>
+<p style="margin-top:18px;color:white">📞 +92 322 3722743</p></section>
+<footer class="footer">Civil Engineer & Project Manager · Build · Plan · Manage · Deliver</footer>
+</body>
+</html>
